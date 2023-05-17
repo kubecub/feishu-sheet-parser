@@ -208,7 +208,7 @@ To be honest, we regard every user of feishu-sheet-parseras a very kind contribu
 
 Since we collaborate project feishu-sheet-parser in a distributed way, we appreciate **WELL-WRITTEN**, **DETAILED**, **EXPLICIT** issue reports. To make the communication more efficient, we wish everyone could search if your issue is an existing one in the searching list. If you find it existing, please add your details in comments under the existing issue instead of opening a brand new one.
 
-To make the issue details as standard as possible, we setup an [ISSUE TEMPLATE](https://github.com/kubecub/feishu-sheet-parser/tree/main/.github/ISSUE_TEMPLATE) for issue reporters. You can find three kinds of issue templates there: question, bug report and feature request. Please **BE SURE** to follow the instructions to fill fields in template.
+To make the issue details as standard as possible, we setup an [ISSUE TEMPLATE](https://github.com/kubecub/.github/tree/main/.github/ISSUE_TEMPLATE) for issue reporters. You can find three kinds of issue templates there: question, bug report and feature request. Please **BE SURE** to follow the instructions to fill fields in template.
 
 **There are a lot of cases when you could open an issue:**
 
@@ -273,7 +273,7 @@ An example for this could be:
 
 #### PR Description
 
-PR is the only way to make change to feishu-sheet-parser project files. To help reviewers better get your purpose, **PR** description could not be too detailed. We encourage contributors to follow the [PR template](https://github.com/kubecub/feishu-sheet-parser/tree/main/.github/PULL_REQUEST_TEMPLATE.md) to finish the pull request.
+PR is the only way to make change to feishu-sheet-parser project files. To help reviewers better get your purpose, **PR** description could not be too detailed. We encourage contributors to follow the [PR template](https://github.com/kubecub/.github/tree/main/.github/PULL_REQUEST_TEMPLATE.md) to finish the pull request.
 
 You can find some very formal PR in [RFC](https://github.com/kubecub/feishu-sheet-parser/issues?q=is%3Aissue+is%3Aopen+RFC+label%3ARFC) issues and learn about them.
 
@@ -358,7 +358,6 @@ Try your best to keep every function has been tested, it keeps the function beha
 
 + [README.md](https://github.com/kubecub/feishu-sheet-parser/blob/main/README.md): This file includes the basic information and instructions for getting started with feishu-sheet-parser.
 + [CONTRIBUTING.md](https://github.com/kubecub/feishu-sheet-parser/blob/main/CONTRIBUTING.md): This file contains guidelines for contributing to feishu-sheet-parser's codebase, such as how to submit issues, pull requests, and code reviews.
-+ [DEVELOPGUIDE.md](https://github.com/kubecub/feishu-sheet-parser/blob/main/DEVELOPGUIDE.md): This file provides a more in-depth guide to developing feishu-sheet-parser, including information on the project's architecture, coding conventions, and testing practices.
 + [Official Documentation](nsddd.top): This is the official documentation for feishu-sheet-parser, which includes comprehensive information on all of its features, configuration options, and troubleshooting tips.
 
 **Please obey the following rules to better format the docs, which would greatly improve the reading experience.**
@@ -431,7 +430,7 @@ Our most recommended way to get in touch is through [Slack](https://join.slack.c
 
 In addition to Slack, we also offer the following ways to get in touch:
 
-+ <a href="https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ" target="_blank"><img src="https://img.shields.io/badge/Slack-feishu-sheet-parser%2B-blueviolet?logo=slack&amp;logoColor=white"></a>:  We also have Slack channels for you to communicate and discuss. To join, visit https://slack.com/ and join our [👀 kubecub slack](https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ) team channel.
++ <a href="https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ" target="_blank"><img src="https://img.shields.io/badge/Slack-kubecub%2B-blueviolet?logo=slack&amp;logoColor=white"></a>:  We also have Slack channels for you to communicate and discuss. To join, visit https://slack.com/ and join our [👀 kubecub slack](https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ) team channel.
 
 + <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=3293172751nss@gmail.com" target="_blank"><img src="https://img.shields.io/badge/gmail-%40kubecub-blue?style=social&kubecubo=gmail&logo=gmail"></a>: Get in touch with us on [Gmail]([3293172751nss@gmail.com](mailto:3293172751nss@gmail.com)). If you have any questions or issues that need resolving, or any suggestions and feedback for our open source projects, please feel free to contact us via email.
 
