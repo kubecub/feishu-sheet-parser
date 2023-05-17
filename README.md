@@ -42,6 +42,34 @@ kubecub Our goal is to build a top-level open source community. We have a set of
 If you'd like to contribute to this feishu-sheet-parser repository, please read our [contributor documentation](https://github.com/kubecub/feishu-sheet-parser/blob/main/CONTRIBUTING.md).
 
 
+## architecture diagram
+```mermaid
+graph LR
+
+subgraph External Services
+feishuAPI --> sheetParser
+end
+
+subgraph Sheet Parser & Manager
+sheetParser[Sheet Parser] --> versionControl
+versionControl[Version Control] --> sheetDisplay
+end
+
+subgraph Display
+sheetDisplay[Sheet Display] --> UI
+end
+
+subgraph Backend
+versionControl --> API
+end
+
+subgraph Frontend
+UI[User Interface]
+end
+
+API --> UI
+UI --> feishuAPI 
+```
 
 ## community meeting
 
