@@ -105,7 +105,8 @@ generate:
 ## lint: Run go lint against code.
 .PHONY: lint
 lint:
-	@golangci-lint run -v ./...
+	@echo "===========> Run golangci to lint source codes"
+	@golangci-lint run -c $(ROOT_DIR)/.golangci.yml $(ROOT_DIR)/...
 
 ## style: Code style -> fmt,vet,lint
 .PHONY: style
