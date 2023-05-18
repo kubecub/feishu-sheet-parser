@@ -34,7 +34,6 @@ A system that monitors and tracks ESG (Environmental, Social and Governance) dis
 > **Note**: You can get started quickly with feishu-sheet-parser.
 
 
-
 ## Contributing & Development
 
 kubecub Our goal is to build a top-level open source community. We have a set of standards, in the [Community repository](https://github.com/kubecub/community).
