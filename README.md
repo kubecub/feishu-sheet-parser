@@ -70,6 +70,18 @@ API --> UI
 UI --> feishuAPI 
 ```
 
+**MVC Architecture Design:**
+```mermaid
+graph LR
+A[View] -->|1. User interaction| B(Controller)
+B -->|2. Requests data| C(Model)
+C -->|3. Returns data| B
+B -->|4. Updates view| A
+```
+
+**File Directory Description:**
+
+
 ## community meeting
 
 We welcome everyone to join us and contribute to feishu-sheet-parser, whether you are new to open source or professional. We are committed to promoting an open source culture, so we offer community members neighborhood prizes and reward money in recognition of their contributions. We believe that by working together, we can build a strong community and make valuable open source tools and resources available to more people. So if you are interested in feishu-sheet-parser, please join our community and start contributing your ideas and skills!
@@ -77,7 +89,6 @@ We welcome everyone to join us and contribute to feishu-sheet-parser, whether yo
 We take notes of each [biweekly meeting](https://github.com/kubecub/feishu-sheet-parser/issues/2) in [GitHub discussions](https://github.com/kubecub/feishu-sheet-parser/discussions/categories/meeting), and our minutes are written in [Google Docs](https://docs.google.com/document/d/1nx8MDpuG74NASx081JcCpxPgDITNTpIIos0DS6Vr9GU/edit?usp=sharing).
 
 feishu-sheet-parser maintains a [public roadmap](https://github.com/kubecub/community/tree/main/roadmaps). It gives a a high-level view of the main priorities for the project, the maturity of different features and projects, and how to influence the project direction.
-
 
 
 ## License
