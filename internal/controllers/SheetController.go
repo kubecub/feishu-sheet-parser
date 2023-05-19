@@ -10,7 +10,7 @@ import (
 // @description 获取飞书表格信息。
 // @description /sheets/密码
 // @param w http.ResponseWriter
-// @param req *http.Request
+// @param req *http.Request.
 func QuerySheetsInfo(w http.ResponseWriter, req *http.Request) {
 	defer req.Body.Close()
 	parameter := strings.Split(strings.TrimPrefix(req.URL.Path, "/sheets/"), "/")

@@ -11,7 +11,7 @@ import (
 // @description 设置飞书配置
 // @description /set/表格Id/应用Id/应用Secret
 // @param w http.ResponseWriter
-// @param req *http.Request
+// @param req *http.Request.
 func SetFeiShuConfig(w http.ResponseWriter, req *http.Request) {
 	defer req.Body.Close()
 	parameter := strings.Split(strings.TrimPrefix(req.URL.Path, "/set/"), "/")
@@ -40,7 +40,7 @@ func SetFeiShuConfig(w http.ResponseWriter, req *http.Request) {
 // @description 更新飞书配置
 // @description /update/表格Id/应用Id/应用Secret
 // @param w http.ResponseWriter
-// @param req *http.Request
+// @param req *http.Request.
 func UpdateFeiShuConfig(w http.ResponseWriter, req *http.Request) {
 	defer req.Body.Close()
 	parameter := strings.Split(strings.TrimPrefix(req.URL.Path, "/update/"), "/")

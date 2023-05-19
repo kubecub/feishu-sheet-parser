@@ -7,9 +7,9 @@ import (
 	"github.com/chyroc/lark"
 )
 
-//CreateBitableTable 新增一个数据表
-//该接口支持调用频率上限为 10 QPS
-//doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table/create
+// CreateBitableTable 新增一个数据表
+// 该接口支持调用频率上限为 10 QPS
+// doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table/create
 func (cli *BitableClient) CreateTable(ctx context.Context, baseToken string, tableReq *lark.CreateBitableTableReqTable) (tableID string, err error) {
 	userIDType := lark.IDTypeUserID
 	res, response, err := cli.larkCli.Bitable.CreateBitableTable(ctx, &lark.CreateBitableTableReq{
@@ -23,9 +23,9 @@ func (cli *BitableClient) CreateTable(ctx context.Context, baseToken string, tab
 	return res.TableID, nil
 }
 
-//BatchCreateBitableTable 新增多个数据表
-//该接口支持调用频率上限为 10 QPS
-//doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table/batch_create
+// BatchCreateBitableTable 新增多个数据表
+// 该接口支持调用频率上限为 10 QPS
+// doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table/batch_create
 func (cli *BitableClient) BatchCreateTable(ctx context.Context, baseToken string, tableReq []*lark.BatchCreateBitableTableReqTable) (tableIDs []string, err error) {
 	userIDType := lark.IDTypeUserID
 	res, response, err := cli.larkCli.Bitable.BatchCreateBitableTable(ctx, &lark.BatchCreateBitableTableReq{
@@ -39,9 +39,9 @@ func (cli *BitableClient) BatchCreateTable(ctx context.Context, baseToken string
 	return res.TableIDs, nil
 }
 
-//CreateBitableRecord 该接口用于在数据表中新增一条记录
-//该接口支持调用频率上限为 10 QPS
-//doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/create
+// CreateBitableRecord 该接口用于在数据表中新增一条记录
+// 该接口支持调用频率上限为 10 QPS
+// doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/create
 func (cli *BitableClient) CreateRecord(ctx context.Context, baseToken string, tableID string, fields map[string]interface{}) (*lark.CreateBitableRecordRespRecord, error) {
 	userIDType := lark.IDTypeUserID
 	res, response, err := cli.larkCli.Bitable.CreateBitableRecord(ctx, &lark.CreateBitableRecordReq{
@@ -56,9 +56,9 @@ func (cli *BitableClient) CreateRecord(ctx context.Context, baseToken string, ta
 	return res.Record, nil
 }
 
-//BatchCreateBitableRecord 该接口用于在数据表中新增多条记录, 单次调用最多新增 500 条记录
-//该接口支持调用频率上限为 10 QPS
-//doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/batch_create
+// BatchCreateBitableRecord 该接口用于在数据表中新增多条记录, 单次调用最多新增 500 条记录
+// 该接口支持调用频率上限为 10 QPS
+// doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/batch_create
 func (cli *BitableClient) BatchCreateRecord(ctx context.Context, baseToken string, tableID string, recordsList []*lark.BatchCreateBitableRecordReqRecord) ([]*lark.BatchCreateBitableRecordRespRecord, error) {
 	userIDType := lark.IDTypeUserID
 	res, response, err := cli.larkCli.Bitable.BatchCreateBitableRecord(ctx, &lark.BatchCreateBitableRecordReq{
@@ -73,9 +73,9 @@ func (cli *BitableClient) BatchCreateRecord(ctx context.Context, baseToken strin
 	return res.Records, nil
 }
 
-//CreateBitableView 在数据表中新增一个视图
-//该接口支持调用频率上限为 10 QPS
-//doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-view/create
+// CreateBitableView 在数据表中新增一个视图
+// 该接口支持调用频率上限为 10 QPS
+// doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-view/create
 func (cli *BitableClient) CreateView(ctx context.Context, baseToken string, tableID string, viewName string, viewType *string) (*lark.CreateBitableViewRespView, error) {
 	res, response, err := cli.larkCli.Bitable.CreateBitableView(ctx, &lark.CreateBitableViewReq{
 		AppToken: baseToken,
@@ -89,9 +89,9 @@ func (cli *BitableClient) CreateView(ctx context.Context, baseToken string, tabl
 	return res.View, nil
 }
 
-//CreateBitableField 该接口用于在数据表中新增一个字段
-//该接口支持调用频率上限为 10 QPS
-//doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-field/create
+// CreateBitableField 该接口用于在数据表中新增一个字段
+// 该接口支持调用频率上限为 10 QPS
+// doc: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-field/create
 func (cli *BitableClient) CreateField(ctx context.Context, request *lark.CreateBitableFieldReq) (*lark.CreateBitableFieldRespField, error) {
 	res, response, err := cli.larkCli.Bitable.CreateBitableField(ctx, request)
 	if err != nil {

@@ -14,7 +14,7 @@ import (
 // @description 发送单条数据到飞书服务器。
 // @description /send/密码
 // @param w http.ResponseWriter
-// @param req *http.Request
+// @param req *http.Request.
 func SendDataHandle(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	defer req.Body.Close()
@@ -57,7 +57,7 @@ func SendDataHandle(w http.ResponseWriter, req *http.Request) {
 // @description 发送多条数据到飞书服务器。
 // @description /sends/工作表Id/密码
 // @param w http.ResponseWriter
-// @param req *http.Request
+// @param req *http.Request.
 func SendDatasHandle(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	defer req.Body.Close()
@@ -114,5 +114,4 @@ func SendDatasHandle(w http.ResponseWriter, req *http.Request) {
 	w.WriteHeader(response.StatusCode)
 	readAll, _ := io.ReadAll(response.Body)
 	w.Write(readAll)
-
 }
