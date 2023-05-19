@@ -43,7 +43,7 @@ GIT_COMMIT:=$(shell git rev-parse HEAD)
 
 IMG ?= ghcr.io/kubecub/feishu-sheet-parser:latest
 
-BUILDFILE = "./main.go"
+BUILDFILE = "./cmd/feishusheet/main.go"
 BUILDAPP = "$(OUTPUT_DIR)/"
 
 # Define the directory you want to copyright
@@ -71,7 +71,7 @@ all: tidy add-copyright lint cover build
 build: 
 	@echo "$(shell go version)"
 	@echo "===========> Building binary $(BUILDAPP) *[Git Info]: $(VERSION)-$(GIT_COMMIT)"
-	@export CGO_ENABLED=0 && chmod +x ./scripts/build.sh && ./scripts/build.sh
+	@export CGO_ENABLED=0 && $(GO) build -o $(BUILDAPP) $(BUILDFILE)
 
 ## build.%: Builds a binary of the specified directory.
 .PHONY: build.%

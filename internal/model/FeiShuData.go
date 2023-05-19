@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/cubxxw/feishu-sheet-parser/internal/utils"
+	"github.com/kubecub/feishu-sheet-parser/internal/utils"
 )
 
 type FeiShuData struct {
