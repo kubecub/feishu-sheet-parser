@@ -21,7 +21,8 @@
 
 <p align="center">
     <a href="./README.md"><b>English</b></a> •
-    <a href="./README_zh-CN.md"><b>中文</b></a>
+    <a href="./README_zh-CN.md"><b>中文</b></a> •
+    <a href="https://kubecub.github.io/feishu-sheet-parser"><b>Docs</b></a>
 </p>
 
 </p>
