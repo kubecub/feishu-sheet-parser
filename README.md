@@ -1,18 +1,19 @@
-# feishu-sheet-parser
-
 <h1 align="center" style="border-bottom: none">
     <b>
-        <a href="https://docker.nsddd.top/Cloud-Native/64.html">feishu-sheet-parser</a><br>
+        <a href="https://docker.nsddd.top">go-project-layout</a><br>
     </b>
-    ⭐️  ESG Tracker: Automated Disclosure Monitoring  ⭐️ <br>
 </h1>
+<h3 align="center" style="border-bottom: none">
+      ⭐️  Template for a typical module written on Go.  ⭐️ <br>
+<h3>
+
 
 <p align=center>
-<a href="https://goreportcard.com/report/github.com/kubecub/feishu-sheet-parser"><img src="https://goreportcard.com/badge/github.com/kubecub/feishu-sheet-parser" alt="A+"></a>
-<a href="https://github.com/issues?q=org%3Akubecub+is%3Aissue+label%3A%22good+first+issue%22+no%3Aassignee"><img src="https://img.shields.io/github/issues/kubecub/feishu-sheet-parser/good%20first%20issue?logo=%22github%22" alt="good first"></a>
-<a href="https://github.com/kubecub/feishu-sheet-parser"><img src="https://img.shields.io/github/stars/kubecub/feishu-sheet-parser.svg?style=flat&logo=github&colorB=deeppink&label=stars"></a>
+<a href="https://goreportcard.com/report/github.com/kubecub/go-project-layout"><img src="https://goreportcard.com/badge/github.com/kubecub/go-project-layout" alt="A+"></a>
+<a href="https://github.com/issues?q=org%25kubecub+is%3Aissue+label%3A%22good+first+issue%22"><img src="https://img.shields.io/github/issues/kubecub/go-project-layout/good%20first%20issue?logo=%22github%22" alt="good first"></a>
+<a href="https://github.com/kubecub/go-project-layout"><img src="https://img.shields.io/github/stars/kubecub/go-project-layout.svg?style=flat&logo=github&colorB=deeppink&label=stars"></a>
 <a href="https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ"><img src="https://img.shields.io/badge/Slack-100%2B-blueviolet?logo=slack&amp;logoColor=white"></a>
-<a href="https://github.com/kubecub/feishu-sheet-parser/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green"></a>
+<a href="https://github.com/kubecub/go-project-layout/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green"></a>
 <a href="https://golang.org/"><img src="https://img.shields.io/badge/Language-Go-blue.svg"></a>
 </p>
 
@@ -20,28 +21,90 @@
 
 <p align="center">
     <a href="./README.md"><b>English</b></a> •
-    <a href="./README_zh.md"><b>中文</b></a>
+    <a href="./README_zh-CN.md"><b>中文</b></a>
 </p>
 
 </p>
 
-## Awesome features
+----
+
+
+## 🧩 Awesome features
 
 A system that monitors and tracks ESG (Environmental, Social and Governance) disclosures and ratings from various public data sources. It collects ESG data points from sources like Feishu spreadsheets and makes them available through an administrative interface.
 
-## Quickstart
+## 🛫 Quick start 
 
 > **Note**: You can get started quickly with feishu-sheet-parser.
 
 
-## Contributing & Development
+<details>
+  <summary>Work with Makefile</summary>
 
-kubecub Our goal is to build a top-level open source community. We have a set of standards, in the [Community repository](https://github.com/kubecub/community).
+```bash
+❯ make help    # show help
+❯ make build   # build binary
+```
 
-If you'd like to contribute to this feishu-sheet-parser repository, please read our [contributor documentation](https://github.com/kubecub/feishu-sheet-parser/blob/main/CONTRIBUTING.md).
+</details>
+<details>
+  <summary>Work with actions</summary>
+
+Actions provide handling of PR and issue.
+We used the bot @kubbot, It can detect issues in Chinese and translate them to English, and you can interact with it using the command `/comment`.
+
+Comment in an issue:
+
+```bash
+❯ /intive
+```
+
+</details>
+<details>
+  <summary>Work with Tools</summary>
+
+```bash
+❯ make tools
+```
+
+</details>
+<details>
+  <summary>Use feishu SDK</summary>
+
+Init client
+```go
+import (
+    parsetsdk "github.com/kubecub/feishu-sheet-parser"
+)
+
+cli := parsetsdk.MustNewClient("cli_a253xxxxb500b", "6YKq9xxxxpZv6D")
+```
+
+Call open interface(CURD)
+> example inset
+```go
+func demo() {
+    ctx := context.Background()
+
+    baseToken := "bascntXKzhxxxxxVKPRe"
+    tableID := "tbl8xxxxAu"
+    fields := map[string]interface{}{
+        "multi-line text": "test content",
+    }
+
+    record, err := cli.CreateRecord(ctx, baseToken, tableID, fields)
+    if err != nil {
+        fmt.Printf("createRecord failed, err=%v\n", err)
+    } else {
+        fmt.Printf("createRecord success, record=%+#v\n", record)
+    }
+}
+```
+
+</details>
 
 
-## architecture diagram
+## 🕋 architecture diagram
 ```mermaid
 graph LR
 
@@ -79,7 +142,7 @@ C -->|3. Returns data| B
 B -->|4. Updates view| A
 ```
 
-**File Directory Description:**
+## 🤖 File Directory Description
 
 
 ## community meeting
