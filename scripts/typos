@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Iterate over each argument provided to the script
+for file in "$@"
+do
+  # Check the spelling of the current file
+  aspell -c "$file"
+done
+
