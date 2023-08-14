@@ -18,9 +18,13 @@ jobs:
       with:
         go-version: ^1.15
 
+    - name: Install typos
+      run: pip install typos
+
     - name: Check typos
-      run: echo "Typo check is temporarily disabled"
+      run: typos ./CONTRIBUTING.md ./README.md
 
     - name: Test
+      r
       r
 
