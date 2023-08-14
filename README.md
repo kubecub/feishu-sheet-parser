@@ -10,7 +10,7 @@
 
 <p align=center>
 <a href="https://goreportcard.com/report/github.com/kubecub/feishu-sheet-parser"><img src="https://goreportcard.com/badge/github.com/kubecub/feishu-sheet-parser" alt="A+"></a>
-<a href="https://github.com/issues?q=org%25kubecub+is%3Aissue+label%3A%22good+first+issue%22"><img src="https://img.shields.io/github/issues/kubecub/feishu-sheet-parser/good%20first%20issue?logo=%22github%22" alt="good first"></a>
+<a href="https://github.com/issues?q=org:kubecub+is:issue+label:good+first+issue"><img src="https://img.shields.io/github/issues/kubecub/feishu-sheet-parser/good%20first%20issue?logo=%22github%22" alt="good first"></a>
 <a href="https://github.com/kubecub/feishu-sheet-parser"><img src="https://img.shields.io/github/stars/kubecub/feishu-sheet-parser.svg?style=flat&logo=github&colorB=deeppink&label=stars"></a>
 <a href="https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ"><img src="https://img.shields.io/badge/Slack-100%2B-blueviolet?logo=slack&amp;logoColor=white"></a>
 <a href="https://github.com/kubecub/feishu-sheet-parser/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green"></a>
@@ -21,7 +21,6 @@
 
 <p align="center">
     <a href="./README.md"><b>English</b></a> •
-    <a href="./README_zh-CN.md"><b>中文</b></a> •
     <a href="https://kubecub.github.io/feishu-sheet-parser"><b>Docs</b></a>
 </p>
 
